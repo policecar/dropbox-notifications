@@ -13,8 +13,7 @@ Sign up with Pushover, retrieve your Pushover user token from https://pushover.n
 and add it to the config file.  
 In the config file specify which folder in your Dropbox to track or else track 'em all.  
 Set up a cronjob ( crontab -e ) for dropbox-pushover.py and you're set to receive Pushover notifications 
-of any changes occurring in the specified Dropbox folder;  
-e.g. 
+of any changes occurring in the specified Dropbox folder; e.g. add a line like to your crontab
     
     00/5 * * * * <INSERT_FULL_PATH_TO_PYTHON>/python <INSERT_FULL_PATH_TO_REPOSITORY>/dropbox-pushover.py
 
