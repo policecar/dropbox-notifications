@@ -8,9 +8,9 @@ Setup
 -------
 
 Unarchive the Dropbox SDK and run python setup.py install on it.  
-Create a Dropbox app at https://www.dropbox.com/developers/apps and put your key and secret into config.py.  
+Create a free Dropbox app at https://www.dropbox.com/developers/apps and put your key and secret into config.py.  
 Retrieve your Pushover user token from https://pushover.net/ and add it to the config file as well as  
-the path to the Dropbox folder to keep track of.
+the path to the Dropbox folder to keep track of.*
 Run
     
     ./dropbox-pushover.py
@@ -27,3 +27,8 @@ Author
 Priska Herger <priska@23bit.net>  
 https://github.com/policecar/dropbox-pushover
 
+
+Footnote
+-------
+.* this might seem like a hassle but avoids sharing access to your Dropbox with third party, 
+and Pushover is useful for all kinds of notifications.
