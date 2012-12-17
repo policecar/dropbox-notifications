@@ -12,7 +12,8 @@ PUSHOVER_URL = "api.pushover.net"
 PUSHOVER_PATH = "/1/messages.json"
 
 # display progress logs on stdout
-logging.basicConfig( level=logging.INFO,
+# set level to logging.INFO for verbosity
+logging.basicConfig( level=logging.ERROR,
 					 format='%(asctime)s %(levelname)s %(message)s' )
 log = logging.getLogger(__name__)
 
