@@ -2,7 +2,7 @@ dropbox-pushover
 ================
 
 Receive Pushover notifications to your Android or iPhone 
-of changes that occurred in a chosen Dropbox folder since you last checked.
+of any changes occurring in a chosen Dropbox folder.
 
 Setup
 -------
