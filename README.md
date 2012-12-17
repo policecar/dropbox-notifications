@@ -9,8 +9,8 @@ Setup
 
 Unarchive the Dropbox SDK and run python setup.py install on it.  
 Create a Dropbox app at https://www.dropbox.com/developers/apps and put your key and secret into config.py.  
-Retrieve your Pushover user token from https://pushover.net/ and add it to the config file.  
-In the config file specify which Dropbox folder to keep track of or else observe 'em all.  
+Retrieve your Pushover user token from https://pushover.net/ and add it to the config file as well as  
+the path to the Dropbox folder to keep track of.
 Run
     
     ./dropbox-pushover.py
