@@ -1,3 +1,7 @@
+/dropbox-python-sdk-1.5.1/
+/db_oauth
+/last_cursor
+
 *.py[cod]
 
 # C extensions
