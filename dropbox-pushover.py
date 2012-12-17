@@ -66,8 +66,8 @@ log.info( 'write pull state to file' )
 with open( cursor_filename, 'wb' ) as f:
     pickle.dump( cursor, f, pickle.HIGHEST_PROTOCOL )
 
-log.info( 'send message to Pushover' )
 if notify:
+    log.info( 'send message to Pushover' )
     conn = httplib.HTTPSConnection( PUSHOVER_URL )
     conn.request( 'POST', PUSHOVER_PATH,
         urllib.urlencode({ 
@@ -81,3 +81,6 @@ if notify:
     res = conn.getresponse()
     log.info( 'response: ' + str( res.status ) + ' ' + res.reason )
     conn.close()
+else:
+    log.info( "things didn't change" )
+    
