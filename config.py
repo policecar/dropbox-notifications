@@ -1,16 +1,13 @@
-# Dropbox config
-# ( create a free Dropbox app at https://www.dropbox.com/developers/apps 
-#   to obtain the following tokens )
 
-APP_KEY     = ''
-APP_SECRET  = ''
-ACCESS_TYPE = 'dropbox' # either 'dropbox' or 'app_folder' depending on app config
+# Dropbox config
+# ( cf. https://www.dropbox.com/developers/apps )
+APP_KEY     = 'f801uszpb7ve35l'
+APP_SECRET  = 'kqy9ub1exmxgvyl'
+ACCESS_TYPE = 'dropbox'
 
 # Pushover config
-# ( retrieve your user token from https://pushover.net/ )
 APP_TOKEN   = 'EpMD3BrlmxioeKvGujVccccPqHeUxd'
 USER_TOKEN  = ''
-
 
 # Dropbox folder to be notified about ( / is the Dropbox root )
 folder_to_watch = '/'
