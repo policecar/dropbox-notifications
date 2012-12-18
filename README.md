@@ -7,16 +7,14 @@ of any changes occurring in a chosen Dropbox folder.
 Setup
 -------
 
-Unarchive the Dropbox SDK and run 
+Install the Dropbox SDK: 
 
+    unzip -x dropbox-python-sdk-1.5.1.zip
+    cd dropbox-python-sdk-1.5.1
     python setup.py install 
-
-on it.  
     
-Create a free Dropbox app at https://www.dropbox.com/developers/apps and put your key and secret into config.py.  
-Retrieve your Pushover user token from https://pushover.net/ and add it to the config file as well as  
-the path to the Dropbox folder to keep track of.*  
-Run
+In config.py specify the path to the Dropbox folder to keep track of as well as your Pushover
+user token which can be retrieved from https://pushover.net/. Run
     
     ./dropbox-pushover.py
     
@@ -33,7 +31,8 @@ Priska Herger <priska@23bit.net>
 https://github.com/policecar/dropbox-pushover
 
 
-Footnote
+Notes
 -------
-.* this might seem like a hassle but avoids sharing access to your Dropbox with third party, 
-and Pushover is useful for all kinds of notifications.
+[1] Make your own Dropbox app at https://www.dropbox.com/developers/apps if you prefer or 
+if the provided credentials don't work (which currently only work max 5 users)  and 
+substitute your own tokens in config.py. 
