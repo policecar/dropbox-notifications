@@ -60,7 +60,7 @@ log.info( 'fetch available deltas' )
 # ( cf. https://www.dropbox.com/developers/reference/api#delta )
 more = True
 notify = False
-folder_to_watch = unicode( folder_to_watch.decode( 'utf-8', 'replace' ))
+folder_to_watch = folder_to_watch.decode( 'utf-8', 'replace' )
 while more: 
     delta = client.delta( cursor=cursor )
     cursor = delta[ 'cursor' ]
