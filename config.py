@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 # Dropbox config
 # ( cf. https://www.dropbox.com/developers/apps )
