@@ -60,11 +60,11 @@ log.info( 'fetch available deltas' )
 # ( cf. https://www.dropbox.com/developers/reference/api#delta )
 more = True
 notify = False
+folder_to_watch = unicode( folder_to_watch.decode( 'utf-8', 'replace' ))
 while more: 
     delta = client.delta( cursor=cursor )
     cursor = delta[ 'cursor' ]
     more = delta[ 'has_more' ]
-    folder_to_watch = unicode( folder_to_watch.decode( 'utf-8', 'replace' ))
     # check if delta includes any entries from desired folder
     for entry in delta[ 'entries' ]:
         if re.match( folder_to_watch, entry[0] ):
@@ -98,4 +98,3 @@ if notify:
     conn.close()
 else:
     log.info( "things didn't change" )
-    
