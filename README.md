@@ -27,7 +27,7 @@ of any changes occurring in the specified Dropbox folder.
 
 Author
 -------
-Priska Herger <priska@23bit.net>  
+Priska Herger
 https://github.com/policecar/dropbox-pushover
 
 
