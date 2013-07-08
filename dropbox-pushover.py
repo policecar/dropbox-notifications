@@ -42,7 +42,7 @@ except IOError as e:
     try:
         with open( auth_filename, 'wb' ) as f:
             pickle.dump( access_token, f, pickle.HIGHEST_PROTOCOL )
-    except IOERROR as ioerr:
+    except IOError as ioerr:
         print "Check your path configurations in config.py - the specified auth path doesn't seem to exist."
 
 # get client
